@@ -25,8 +25,21 @@ def main ():
      # FUNCTION 3 - takes the text from the book as a string,
      # and returns the number of times each character appears in the string...
      
+    def count_characters(file_contents):
+        char_count = {}
+        for char in file_contents:
+            if char in char_count:
+                char_count[char] += 1
+            else:
+                char_count[char] = 1
+        return char_count
+    # Ensures characters are all lower case as we don't want to count duplicate characters:
+    file_contents = file_contents.lower()
+    print(count_characters(file_contents))
+    
      
 
+    
 
 # calls the main function       
 if __name__ == "__main__":
