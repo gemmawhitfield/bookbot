@@ -24,7 +24,6 @@ def main ():
     
      # FUNCTION 3 - takes the text from the book as a string,
      # and returns the number of times each character appears in the string...
-     
     def count_characters(file_contents):
         char_count = {}
         for char in file_contents:
@@ -36,6 +35,22 @@ def main ():
     # Ensures characters are all lower case as we don't want to count duplicate characters:
     file_contents = file_contents.lower()
     print(count_characters(file_contents))
+    
+    
+    
+    # FUNCTION 4 - creates an overall report and prints it to the console...
+    # !!! INCOMPLETE -  NEEDS WORK !!! 
+    def print_report(file_contents):
+        print("--- Begin report of books/frankenstein.txt ---")        
+        print(f"{num_of_words(file_contents)} words found in the document.\n")
+               
+        def sort_on(char_count):
+            return char_count["num"]
+        
+
+        print(count_characters(file_contents))
+    
+    print_report(file_contents)
     
      
 
