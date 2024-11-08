@@ -1,4 +1,4 @@
-# Variables 
+# Variables - change according to the book you want to read:
 path_to_book = "books/frankenstein.txt"
 
 
@@ -40,7 +40,7 @@ def count_characters(file_contents):
 
 # Function that creates an overall report and prints it to the console:
 def print_report(file_contents):
-    print("--- Begin report of books/frankenstein.txt ---")
+    print("--- Begin book report ---")
     print(f"{num_of_words(file_contents)} words found in the document.\n")
     
     chars_dict = get_chars_dict(file_contents)
